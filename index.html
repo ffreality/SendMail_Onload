@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+// smtpjs.com
+// You can create SecureToken from "Encrypt your SMTP Credentials" section on SMTP JS website
 <html>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 		<body onload="SendMail()">
 			<script>
 				function SendMail() {
  					Email.send({
-    					SecureToken : "07fcfa5a-6ab4-48fd-9cc6-6ba669958cf6",
-   					To : 'requests@ffreality.com',
-    					From : 'form@ffreality.com',
+    					SecureToken : "Token",
+   					To : 'target@mail.com,
+    					From : 'sender@mail.com',
     					Subject : "This is the subject",
    					Body : "And this is the body",
 				}).then();
